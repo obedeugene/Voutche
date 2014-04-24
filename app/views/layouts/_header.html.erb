@@ -7,7 +7,15 @@
           <li><%= link_to  "Home",    root_path %></li>
           <li><%= link_to "About",    about_path %></li>
           <li><%= link_to "Help",     help_path %></li>
-          <li><%= link_to "Contact",  contact_path %></li>          
+          <li><%= link_to "Contact",  contact_path %></li>   
+          <li>
+              <% if current_user %>
+                Signed in as <strong><%= current_user.name %></strong>!
+                <%= link_to "Sign out", signout_path, id: "sign_out" %>
+              <% else %>
+                <%= link_to "Facebook Login", "/auth/facebook", id: "sign_in" %>
+              <% end %>
+            </li>                 
         </ul>
       </nav>
     </div>
