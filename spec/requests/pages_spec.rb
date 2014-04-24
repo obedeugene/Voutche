@@ -12,7 +12,7 @@ describe "Pages" do
   
     # it { should	have_selector('title', text: 'Home') }
     it { should have_selector('h1',    text: 'Voutche') }
-  end
+end
 
   # it "should have the right links"	do
   # 	visit root_path
