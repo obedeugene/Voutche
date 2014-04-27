@@ -13,6 +13,7 @@ describe "Pages" do
     # it { should	have_selector('title', text: 'Home') }
     it { should have_selector('h1',    text: 'Voutche') }
     it { should have_selector('title, text: 'Voutche')}
+    
 end
 
   # it "should have the right links"	do
