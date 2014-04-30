@@ -16,15 +16,15 @@ describe "Pages" do
     
 end
 
-  # it "should have the right links"	do
-  # 	visit root_path
-  # 	click_link "About"
-  # 	it { should have_selector 'title',   text: 'About Us' }
-  # 	click_link "Help" 
-  # 	it { should have_selector('title',   text: 'Help') }
-  # 	click_link "Contact"
-  # 	it { should have_selector('title',   text: 'Contact Us') }
-  # end	
+  it "should have the right links"	do
+  	visit root_path
+  	click_link "About"
+  	it { should have_selector 'title',   text: 'About Us' }
+  	click_link "Help" 
+  	it { should have_selector('title',   text: 'Help') }
+  	click_link "Contact"
+  	it { should have_selector('title',   text: 'Contact Us') }
+  end	
 
 
 end
